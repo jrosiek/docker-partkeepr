@@ -1,3 +1,5 @@
 .envrc
 *.sql
 .DS_Store
+root/
+*.swp

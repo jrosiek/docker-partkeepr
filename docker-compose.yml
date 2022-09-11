@@ -83,6 +83,26 @@ services:
 
 volumes:
   partkeepr-conf:
+     driver: local
+     driver_opts:
+           type: none
+           o: bind
+           device: ${PARTKEEPR_ROOT}/conf
   partkeepr-data:
+     driver: local
+     driver_opts:
+           type: none
+           o: bind
+           device: ${PARTKEEPR_ROOT}/data
   partkeepr-web:
+     driver: local
+     driver_opts:
+           type: none
+           o: bind
+           device: ${PARTKEEPR_ROOT}/web
   mysql-data:
+     driver: local
+     driver_opts:
+           type: none
+           o: bind
+           device: ${PARTKEEPR_ROOT}/db
